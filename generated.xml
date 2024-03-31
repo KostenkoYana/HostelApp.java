@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hostel>
+    <id>288</id>
+    <name>Kyiv hostel</name>
+    <address>Birch St, 43</address>
+    <contacts>
+        <id>290</id>
+        <mail>kyivhostel@gmail.com</mail>
+        <phone>+2345678901</phone>
+    </contacts>
+    <admin>
+        <expirence>8</expirence>
+        <id>289</id>
+        <lastName>Kovalenko</lastName>
+        <name>Olha</name>
+    </admin>
+    <rooms>
+        <numberOfRoom>1</numberOfRoom>
+        <price>200</price>
+        <typeOfRoom>Dormitory</typeOfRoom>
+    </rooms>
+    <rooms>
+        <numberOfRoom>2</numberOfRoom>
+        <price>500</price>
+        <typeOfRoom>Double</typeOfRoom>
+    </rooms>
+    <rooms>
+        <numberOfRoom>3</numberOfRoom>
+        <price>600</price>
+        <typeOfRoom>Double</typeOfRoom>
+    </rooms>
+    <rooms>
+        <numberOfRoom>4</numberOfRoom>
+        <price>300</price>
+        <typeOfRoom>Dormitory</typeOfRoom>
+    </rooms>
+    <clients>
+        <lastName>Radko</lastName>
+        <name>Mykola</name>
+    </clients>
+    <clients>
+        <lastName>Kyrylenko</lastName>
+        <name>Petro</name>
+    </clients>
+    <clients>
+        <lastName>Sokolova</lastName>
+        <name>Kateryna</name>
+    </clients>
+    <clients>
+        <lastName>Turchin</lastName>
+        <name>Alina</name>
+    </clients>
+    <clients>
+        <lastName>Krasko</lastName>
+        <name>Dmytro</name>
+    </clients>
+</hostel>

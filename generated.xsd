@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="hostel" type="hostel"/>
+
+  <xs:complexType name="hostel">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+      <xs:element name="address" type="xs:string" minOccurs="0"/>
+      <xs:element name="contacts" type="contacts" minOccurs="0"/>
+      <xs:element name="admin" type="admin" minOccurs="0"/>
+      <xs:element name="rooms" type="room" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="clients" type="client" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="contacts">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int"/>
+      <xs:element name="mail" type="xs:string" minOccurs="0"/>
+      <xs:element name="phone" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="admin">
+    <xs:sequence>
+      <xs:element name="expirence" type="xs:int"/>
+      <xs:element name="id" type="xs:int"/>
+      <xs:element name="lastName" type="xs:string" minOccurs="0"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="room">
+    <xs:sequence>
+      <xs:element name="numberOfRoom" type="xs:int"/>
+      <xs:element name="price" type="xs:int"/>
+      <xs:element name="typeOfRoom" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="client">
+    <xs:sequence>
+      <xs:element name="lastName" type="xs:string" minOccurs="0"/>
+      <xs:element name="name" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
